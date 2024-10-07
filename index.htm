@@ -13,7 +13,7 @@
 
       <a href="#products">Products</a>
 
-      <a href="#" id="signin">sign-in</a>
+      <a href="#" id="signin">Sign-in</a>
     </nav>
 
     <div id="app">
@@ -25,16 +25,33 @@
       </div>
     </div>
 
-       <div class="modal">
+    <div class="modal">
       <div class="modal-background close-modal"></div>
       <div class="alert-panel">
         <div class="close-btn close-modal">X</div>
-        <div class="feedback">This is my <span>COOL</span> alert!!</div>
+        <div class="feedback">
+          Sign-in:
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Username:"
+          />
+
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Password:"
+          />
+        </div>
         <div class="buttons">
-          <div class="save">SAVE</div>
-          <div class="close close-modal">CLOSE</div>
+          <div class="close close-modal">Close</div>
+          <div class="submit" id="submit">Submit</div>
         </div>
       </div>
+      <div class="loader">Loading...</div>
+    </div>
 
     <script src="/lib/jquery-3.7.1.min.js"></script>
     <script src="/app/app.js"></script>
