@@ -12,7 +12,7 @@ function initListeners() {
     console.log("submit");
     $(".submit").css("display", "none");
     $(".buttons").css("justify-content", "center");
-    $(".close").css({ "background-color": "black", color: "white" });
+    // $(".close").css({ "background-color": "black", color: "white" });
     openModal(`Sign-in successful`);
   });
 
