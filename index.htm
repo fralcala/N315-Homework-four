@@ -9,20 +9,32 @@
   </head>
   <body>
     <nav>
-      <ul>
-        <li>
-          <a href="#home">Home</a>
-        </li>
-        <li>
-          <a href="#products">Products</a>
-        </li>
-        <li>
-          <a href="#sign-in">sign-in</a>
-        </li>
-      </ul>
+      <a href="#home">Home</a>
+
+      <a href="#products">Products</a>
+
+      <a href="#" id="signin">sign-in</a>
     </nav>
 
-    <div id="app"></div>
+    <div id="app">
+      <div class="firstImage">
+        <img src="images/Standing_white_tiger.jpg" />
+      </div>
+      <div class="secondImage">
+        <img src="images/tiger-and-cub.jpeg" />
+      </div>
+    </div>
+
+       <div class="modal">
+      <div class="modal-background close-modal"></div>
+      <div class="alert-panel">
+        <div class="close-btn close-modal">X</div>
+        <div class="feedback">This is my <span>COOL</span> alert!!</div>
+        <div class="buttons">
+          <div class="save">SAVE</div>
+          <div class="close close-modal">CLOSE</div>
+        </div>
+      </div>
 
     <script src="/lib/jquery-3.7.1.min.js"></script>
     <script src="/app/app.js"></script>
