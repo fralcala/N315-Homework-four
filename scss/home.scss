@@ -1,0 +1,97 @@
+.home {
+  font-family: merri-reg;
+  margin-bottom: 30px;
+
+  .splash {
+    padding: 40px;
+    height: 300px;
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.568),
+        rgba(255, 255, 255, 0.76),
+        rgba(255, 255, 255, 0.329)
+      ),
+      url(../assets/images/pexels-jeshoots-3631.jpg);
+    background-position: 50% 57%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    h1 {
+      font-family: merri-reg;
+      font-size: 55px;
+    }
+
+    p {
+      font-family: merri-reg;
+      font-size: 16px;
+    }
+  }
+
+  .item-section {
+    .items-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: center;
+
+      .item {
+        height: 400px;
+        width: 250px;
+        // background-color: aquamarine;
+        margin: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        text-align: center;
+        border: 2px solid black;
+        .item-image {
+          width: 100%;
+          height: 50%;
+          //   background-color: blue;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+        }
+
+        .item1 {
+          background-image: url(../assets/images/pexels-david-disponett-1118410-2161649.jpg);
+        }
+
+        .item2 {
+          background-image: url(../assets/images/pexels-clausthor-5796721.jpg);
+        }
+
+        .item3 {
+          background-image: url(../assets/images/pexels-keynotez-1625235.jpg);
+        }
+
+        .item4 {
+          background-image: url(../assets/images/pexels-marc-schulte-656598-1978181.jpg);
+        }
+
+        .item5 {
+          background-image: url(../assets/images/pexels-sittisak-c-842235-1739347.jpg);
+        }
+
+        .desc-and-button {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          p {
+            font-size: 16px;
+          }
+          .button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 150px;
+            height: 40px;
+            background-color: burlywood;
+            border-radius: 20px 10px;
+            margin: 15px;
+          }
+        }
+      }
+    }
+  }
+}

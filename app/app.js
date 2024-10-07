@@ -1,3 +1,5 @@
+import { changePage } from "../model/model.js";
+
 function initListeners() {
   $("#signin").on("click", (e) => {
     console.log("open modal");
@@ -30,6 +32,19 @@ $(window).on("load", function () {
   $(".modal").css("display", "none");
 });
 
+function route() {
+  let hashtag = window.location.hash;
+  let pageID = hashtag.replace("#", "");
+  console.log("route ", pageID);
+  changePage(pageID);
+}
+
+function initSite() {
+  $(window).on("hashchange", route);
+  route();
+}
+
 $(document).ready(function () {
   initListeners();
+  initSite();
 });
